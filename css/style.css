@@ -1,0 +1,563 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	font-family: "Caveat", cursive;
+	background: #f5f5f5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* padding: 50px; */
+}
+/* ------------------------------ */
+body {
+	font-size: 0px;
+	font-family: "Roboto";
+}
+.header,
+.footer {
+	margin: 0px 0px 40px 0px;
+	padding: 15px;
+	text-align: left;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 900;
+	vertical-align: middle;
+	text-shadow: 3px 3px 5px rebeccapurple;
+	font-style: italic;
+}
+.main {
+}
+.sun {
+	display: inline-block;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	animation-name: sun;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: 30;
+}
+
+@keyframes sun {
+	0% {
+		transform: translate(20px, 60px) rotate(360deg);
+		background: url("../img/sun_PNG13422.png") 0 0 / cover no-repeat;
+		overflow: hidden;
+	}
+	30% {
+		transform: translate(150px, -120px);
+	}
+	70% {
+		transform: translate(300px, -250px);
+	}
+	100% {
+		transform: translate(570px, 130px) rotate(360deg);
+		background: url("../img/pngwing.com.png") 0 0 / cover no-repeat;
+		overflow: hidden;
+	}
+}
+
+.sky {
+	display: inline-block;
+	background: url("../img/grass-clip-art-41.png") 0px 380px / 100% 5% no-repeat, rgb(0, 183, 255, 0.8);
+	width: 100%;
+	height: 400px;
+	perspective: 400px;
+	perspective-origin: 0 0;
+}
+
+.skyes {
+	display: inline-block;
+
+	animation-name: sky;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes sky {
+	0% {
+		transform: scale(2, 1.5) translate(0px, 0px);
+	}
+	75% {
+		transform: scale(1, 1) translate(300px, 5px);
+	}
+	50% {
+		transform: scale(0.8, 1) translate(600px, 10px);
+	}
+	25% {
+		transform: scale(0.5, 0.5) translate(900px, 15px);
+	}
+	100% {
+		transform: scale(2, 1.5) translate(1300px, 20px);
+	}
+}
+.sky1 {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 40px;
+	margin: 10px;
+	background: #328fff;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0010f0;
+	border-radius: 50% 50% 0 0;
+}
+.sky1::before,
+.sky1::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	background: inherit;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0010f0;
+}
+.sky1::before {
+	display: inline-block;
+	content: "";
+	left: 80%;
+	width: 60%;
+	height: 60%;
+	border-left: none;
+	border-radius: 50% 50% 50% 0;
+}
+.sky1::after {
+	display: inline-block;
+	content: "";
+	right: 80%;
+	width: 80%;
+	height: 80%;
+	border-right: none;
+	border-radius: 50% 50% 0;
+}
+.sky2 {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 60px;
+	margin: 40px;
+	background: #b6e1f5;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0596f7;
+	border-radius: 50% 50% 0 0;
+}
+.sky2::before,
+.sky2::after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	background: inherit;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #0596f7;
+}
+.sky2::before {
+	display: inline-block;
+	content: "";
+	left: 80%;
+	width: 60%;
+	height: 60%;
+	border-left: none;
+	border-radius: 50% 50% 50% 0;
+}
+.sky2::after {
+	display: inline-block;
+	content: "";
+	right: 80%;
+	width: 80%;
+	height: 80%;
+	border-right: none;
+	border-radius: 50% 50% 0;
+}
+
+.road {
+	background: url("../img/grass-clip-art-41.png") 0px 230px / 100% 15% no-repeat, rgb(54, 54, 54);
+	width: 100%;
+	height: 260px;
+}
+.road::before {
+	display: inline-block;
+	content: "";
+	border-top: 17px dashed rgb(255, 252, 252);
+	height: 10px;
+	width: 100%;
+	position: relative;
+	top: 100px;
+}
+
+/* ------------------------------------ */
+.fon {
+	overflow: hidden;
+	background: rgb(170, 170, 170);
+}
+.car {
+	transform: translate(0%);
+	transition: all 4s ease 0.8s;
+	display: inline-block;
+	padding: 120px 50px 50px 30px;
+	width: 600px;
+	position: relative;
+	top: -300px;
+}
+.fon:hover .car {
+	transform: translate(280%, 0%);
+}
+
+.car__bottom {
+	display: inline-block;
+	width: 610px;
+	height: 110px;
+	background: rgb(175, 0, 0);
+	border-radius: 0px 10px 0px 0px;
+	position: relative;
+	border-right: 3px solid black;
+	border-left: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+.car__line2 {
+	display: inline-block;
+	background: black;
+	height: 30px;
+	width: 645px;
+	border-radius: 10px 10px 10px 10px;
+	position: relative;
+	top: 90px;
+	left: -15px;
+}
+.car__open {
+	display: inline-block;
+	background: black;
+	height: 10px;
+	width: 35px;
+	border-radius: 30px 30px 30px 30px;
+	position: relative;
+	top: -50px;
+	left: 30px;
+}
+
+.car__item {
+	width: 20px;
+	height: 40px;
+	border-radius: 80px 0px 0px 80px;
+	background: rgba(243, 240, 240, 0.87);
+	position: relative;
+	right: -590px;
+	top: -15px;
+	border: 3px solid black;
+	transform: rotate(15deg);
+}
+.car__item::before {
+	display: inline-block;
+	content: "";
+	border: 52px solid transparent;
+	border-width: 0px 40px 155px;
+	border-color: rgba(1, 128, 231, 0.5) transparent;
+	position: relative;
+	top: -50px;
+	right: -45px;
+	transform: skew(150deg, 60deg);
+	transform: rotate(275deg);
+}
+
+.car__item::after {
+	display: inline-block;
+	content: "";
+	width: 5px;
+	height: 70px;
+	background: black;
+	position: relative;
+	top: -220px;
+	left: -70px;
+	transform: rotate(-35deg);
+}
+
+.car__wing {
+	display: inline-block;
+	height: 0px;
+	width: 230px;
+	border-bottom: 40px solid #520000;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: relative;
+	top: -20px;
+	right: -20px;
+}
+.car__wing::before {
+	display: inline-block;
+	content: "";
+	height: 0px;
+	width: 200px;
+	border-bottom: 20px solid #000000;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: relative;
+	top: 20px;
+	right: 5px;
+}
+.car__wing2 {
+	display: inline-block;
+	height: 0px;
+	width: 130px;
+	border-bottom: 40px solid #520000;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	position: relative;
+	top: -20px;
+	left: 200px;
+}
+.car__wing2::before {
+	display: inline-block;
+	content: "";
+	height: 0px;
+	width: 100px;
+	border-bottom: 20px solid #000000;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: relative;
+	top: 20px;
+	right: 5px;
+}
+.line1 {
+	display: inline-block;
+
+	background: black;
+	position: absolute;
+
+	height: 55px;
+	top: 50px;
+	left: -30px;
+	width: 30px;
+	border-radius: 5px 0px 0px 5px;
+	border-top: 1px solid rgb(253, 249, 249);
+	border-left: 1px solid rgb(247, 245, 245);
+}
+.car__wheel {
+	display: inline-block;
+	margin-right: 15px;
+	position: relative;
+	top: -90px;
+	right: 260px;
+	height: 90px;
+	width: 90px;
+	background: url("../img/car_logo_PNG1655.png") 50% 50% / cover no-repeat, grey;
+	transform: skew(-5deg);
+	border-radius: 50%;
+	border: 15px solid rgb(10, 10, 10);
+	animation-name: wheel;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.car__wheel2 {
+	display: inline-block;
+	position: relative;
+	top: -90px;
+	right: 270px;
+	height: 90px;
+	width: 90px;
+	background: url("../img/car_logo_PNG1655.png") 50% 50% / cover no-repeat, grey;
+	transform: skew(-5deg);
+	border-radius: 50%;
+	border: 15px solid rgb(10, 10, 10);
+	animation-name: wheel;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+.car__wheel1 {
+	display: inline-block;
+	position: relative;
+	top: -190px;
+	right: -450px;
+	height: 90px;
+	width: 90px;
+	background: url("../img/car_logo_PNG1655.png") 50% 50% / cover no-repeat, grey;
+	transform: skew(-5deg);
+	border-radius: 50%;
+	border: 15px solid rgb(10, 10, 10);
+	animation-name: wheel;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+.car__wheel,
+.car__wheel1,
+.car__wheel2 {
+	animation-play-state: paused;
+}
+.fon:hover .car__wheel,
+.fon:hover .car__wheel1,
+.fon:hover .car__wheel2 {
+	animation-play-state: running;
+}
+
+.car__top {
+	display: inline-block;
+
+	height: 70px;
+	width: 300px;
+	border-bottom: 70px solid rgb(175, 0, 0);
+	border-left: 0px solid transparent;
+	border-right: 40px solid transparent;
+	position: relative;
+	top: -256px;
+	right: -250px;
+}
+.car__top::before {
+	display: inline-block;
+	content: "";
+	width: 260px;
+	height: 20px;
+	border-radius: 0px 60px 0px 0px;
+	background: rgb(112, 2, 2);
+	position: relative;
+	top: -20px;
+}
+.car__top::after {
+	display: inline-block;
+	content: "";
+	width: 20px;
+	height: 40px;
+	border-radius: 80px 0px 0px 80px;
+	background: rgba(122, 116, 116, 0.87);
+	position: relative;
+	right: -50px;
+	top: -65px;
+	border: 3px solid black;
+	transform: rotate(-5deg);
+}
+.line {
+	display: inline-block;
+	width: 10px;
+	background: black;
+	height: 50px;
+	position: relative;
+	left: 0px;
+	top: -160px;
+}
+
+.line__top {
+	display: inline-block;
+	height: 10px;
+	width: 250px;
+	background: black;
+	position: relative;
+	top: -200px;
+	left: -4px;
+}
+
+.window1,
+.window2 {
+	display: inline-block;
+	background: linear-gradient(to bottom, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 99%);
+	vertical-align: middle;
+}
+
+.window1 {
+	width: 90px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 0px 0px 0px 0px;
+	position: relative;
+	top: -15px;
+	left: 25px;
+	margin-right: 10px;
+}
+.window1::before {
+	display: inline-block;
+	content: "";
+	background: black;
+	width: 3px;
+	height: 180px;
+	position: absolute;
+	top: -17px;
+	left: 96px;
+}
+.window2 {
+	width: 90px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 0px 0px 0px 0px;
+	position: relative;
+	top: -15px;
+	left: 35px;
+}
+.window2::before {
+	display: inline-block;
+	content: "";
+	height: 60px;
+	width: 40px;
+	border-bottom: 60px solid rgb(29, 29, 29);
+	border-left: 0px solid transparent;
+	border-right: 30px solid transparent;
+	position: relative;
+	left: 100px;
+}
+
+/* ------------------------ */
